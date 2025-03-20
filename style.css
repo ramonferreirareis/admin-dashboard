@@ -24,3 +24,13 @@
 .main-content {
     background-color: rgb(171, 203, 230);
 }
+
+/* Icon and Images */
+
+.item > img{
+    width: 30px;
+}
+
+.logo > img {
+    width: 50px;
+}
