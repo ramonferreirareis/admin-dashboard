@@ -44,7 +44,7 @@ nav {
     flex-direction: column;
     gap: 12px;
 
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* HEADER */
@@ -52,20 +52,42 @@ nav {
 .header {
     background-color: rgb(252, 251, 251);
     padding: 20px 40px;
+
+    
 }
 
 .search-bar {
     display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .search-bar input {
     background-color: rgb(212, 227, 240);
-    width: 500px;
+    flex-grow: 1;
     height: 30px;
     border-radius: 20px;
 }
 
-/*  */
+.top-header p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+/* MAIN */
 
 .main-content {
     background-color: rgb(212, 227, 240);
@@ -84,4 +106,8 @@ nav {
 
 .header img {
     width: 30px;
+}
+
+.top-header .pfp-normal {
+    width: 40px;
 }
