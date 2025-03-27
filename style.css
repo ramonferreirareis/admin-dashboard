@@ -55,6 +55,8 @@ nav {
 
     display: grid;
     grid-template-rows: 0.6fr 1fr;
+
+    box-shadow: 30px 30px #000000;
 }
 
 .search-bar {
@@ -111,6 +113,23 @@ nav {
 .bottom-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+
+.buttons {
+    align-self: center;
+
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    color: white;
+    background-color:  rgb(67, 144, 231);
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
 }
 /* MAIN */
 
