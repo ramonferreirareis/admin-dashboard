@@ -10,10 +10,7 @@
     grid-template: 1.5fr 6fr / 1.3fr 6fr;
 }
 
-.header {
-    background-color: rgb(252, 251, 251);
-    
-}
+
 
 /* SIDEBAR */
 
@@ -50,10 +47,28 @@ nav {
     font-size: 1.3em;
 }
 
+/* HEADER */
+
+.header {
+    background-color: rgb(252, 251, 251);
+    padding: 20px 40px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    background-color: rgb(212, 227, 240);
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+}
+
 /*  */
 
 .main-content {
-    background-color: rgb(171, 203, 230);
+    background-color: rgb(212, 227, 240);
 }
 
 /* Icon and Images */
@@ -65,4 +80,8 @@ nav {
 
 .logo > img {
     width: 50px;
+}
+
+.header img {
+    width: 30px;
 }
