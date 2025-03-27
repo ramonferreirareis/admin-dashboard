@@ -51,9 +51,10 @@ nav {
 
 .header {
     background-color: rgb(252, 251, 251);
-    padding: 20px 40px;
+    padding-inline: 40px;
 
-    
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
 }
 
 .search-bar {
@@ -87,6 +88,30 @@ nav {
     justify-self: flex-end;
 }
 
+.profile-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-container > .pfp-big {
+    height: 70px;
+    width: 70px;
+    
+}
+
+.profile-container p {
+    font-weight: bold;
+}
+
+.profile-intro > p:nth-child(2) {
+    font-size: 1.7em;
+}
+
+.bottom-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /* MAIN */
 
 .main-content {
