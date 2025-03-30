@@ -106,7 +106,7 @@ nav {
     font-weight: bold;
 }
 
-.profile-intro > p:nth-child(2) {
+.bottom-header .profile-intro > p:nth-child(2) {
     font-size: 1.7em;
 }
 
@@ -135,6 +135,10 @@ nav {
 
 .main-content {
     background-color: rgb(212, 227, 240);
+}
+
+.users img {
+    width: 50px;
 }
 
 /* Icon and Images */
