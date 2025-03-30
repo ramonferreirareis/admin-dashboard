@@ -135,6 +135,15 @@ nav {
 
 .main-content {
     background-color: rgb(212, 227, 240);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+.projects-container > h2 {
+    margin-bottom: 10px;
 }
 
 .users img {
@@ -146,6 +155,29 @@ nav {
 
     display: flex;
     gap: 20px;
+
+   
+}
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    height: 150px;
+
+    border-left: solid 7px rgb(247, 192, 74);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
 }
 
 /* Icon and Images */
