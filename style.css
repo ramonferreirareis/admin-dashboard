@@ -138,13 +138,24 @@ nav {
     background-color: rgb(212, 227, 240);
     padding: 20px;
 
-    display: grid;
-    grid-template-columns: 3fr 1fr;
     gap: 30px;
 }
 
-.projects-container > h2 {
+.projects-container > h2,
+.news-content > h2 {
     margin-bottom: 10px;
+}
+
+.news-content:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+    grid-column: 3;
+    grid-row: 2 / span 3;
+}
+
+.news-content:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+    grid-column: 3;
+    grid-row: 5 / span 3;
 }
 
 .users img {
@@ -153,7 +164,7 @@ nav {
 
 .cards {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template: 0.1 1fr 1fr 1fr 1fr 1fr 1fr 1fr / repeat(3, 1fr);
 
     gap: 30px;
 }
@@ -170,6 +181,7 @@ nav {
     gap: 10px;
     padding: 40px 20px;
 
+    grid-row: span 2;
 }
 
 .card-buttons {
@@ -184,6 +196,25 @@ nav {
     width: 25px;
 }
 
+.titles {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cards > h2:nth-child(odd) {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.cards > h2:nth-child(even) {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.news-content > h2 {
+    background-color: rgb(212, 227, 240) ;
+    padding-bottom: 10;
+}
 
 /* Icon and Images */
 
