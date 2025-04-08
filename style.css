@@ -191,6 +191,23 @@ nav {
     border-left: solid 7px rgb(247, 192, 74);
     border-radius: 10px;
 
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 30px 20px;
+
+}
+
+.text {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.card-buttons {
+    justify-self: end;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .card-buttons img {
