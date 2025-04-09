@@ -59,14 +59,13 @@ nav {
 }
 
 .search-bar {
-    display: flex;
+    display: grid;
     align-items: center;
-    gap: 15px;
+    grid-template-columns: 1fr 10fr;
 }
 
 .search-bar input {
     background-color: rgb(212, 227, 240);
-    flex-grow: 1;
     height: 30px;
     border-radius: 20px;
 }
@@ -78,19 +77,29 @@ nav {
 
 .top-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 }
 
 .profile-section {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-self: flex-end;
+    justify-items: center; 
+    grid-column: 3;
+}
+
+.profile-section > img:nth-child(1) {
+    justify-self: end;
+}
+
+label[for="search"] {
+    height: 30px;
 }
 
 .profile-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
     gap: 20px;
     align-items: center;
 }
@@ -111,16 +120,16 @@ nav {
 
 .bottom-header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .buttons {
-    align-self: center;
-
-    display: flex;
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     gap: 30px;
-    justify-content: flex-end;
 }
 
 .buttons button {
