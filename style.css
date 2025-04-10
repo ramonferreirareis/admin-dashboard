@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend+Giga:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schoolbell&family=Smooch+Sans:wght@100..900&display=swap');
+
+
 * {
     border: 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Funnel Display";
 }
 
 .container {
@@ -16,7 +20,7 @@
 /* SIDEBAR */
 
 .sidebar {
-    background-color: rgb(67, 144, 231);
+    background-color:rgb(25, 145, 99);
     color: white;
     grid-row: 1 / 3;
 
@@ -49,7 +53,7 @@ nav {
 /* HEADER */
 
 .header {
-    background-color: rgb(252, 251, 251);
+    background-color: rgba(253, 226, 226, 0.781);
     padding: 20px 40px;
 
     display: grid;
@@ -65,7 +69,7 @@ nav {
 }
 
 .search-bar input {
-    background-color: rgb(212, 227, 240);
+    background-color: rgb(250, 183, 183);
     height: 30px;
     border-radius: 20px;
 }
@@ -134,7 +138,7 @@ label[for="search"] {
 
 .buttons button {
     color: white;
-    background-color:  rgb(67, 144, 231);
+    background-color:rgb(25, 145, 99);
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 20px;
@@ -142,12 +146,14 @@ label[for="search"] {
 /* MAIN */
 
 .main-content {
-    background-color: rgb(212, 227, 240);
+    background-color:rgb(250, 183, 183);
     padding: 20px;
 
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
     gap: 30px;
+
+    font-size: 0.9em;
 }
 
 .projects {
@@ -170,7 +176,9 @@ label[for="search"] {
 }
 
 .news {
-    padding: 10px 40px;
+    padding-inline: 20px;
+    padding-top:29px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
@@ -217,13 +225,21 @@ label[for="search"] {
     background-color: white;
     /* height: 200px; */
     
-    border-left: solid 7px rgb(247, 192, 74);
+    border-left: solid 7px rgb(25, 145, 99);
     border-radius: 10px;
 
     display: grid;
     grid-template-rows: 3fr 1fr;
     padding: 30px 40px;
 
+    
+}
+
+.card,
+.news,
+.users,
+.header {
+    box-shadow: 0 15px 40px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
 
 .text {
@@ -241,6 +257,14 @@ label[for="search"] {
 
 .card-buttons img {
     width: 25px;
+}
+
+.profile-intro p:nth-child(even) {
+    font-weight: 400;
+}
+
+.bottom-header .profile-container .profile-intro p {
+    font-weight: bold;
 }
 
 /* Icon and Images */
